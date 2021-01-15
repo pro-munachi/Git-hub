@@ -1,0 +1,457 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+header {
+  background: #24292e;
+  color: white;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  margin: auto;
+  height: 100%;
+}
+
+label {
+  margin: auto;
+  font-size: 26px;
+  margin-left: 16px;
+  display: none;
+}
+.hidden-bell {
+  font-size: 20px;
+  display: none;
+  margin-right: 20px;
+  margin-top: 7px;
+}
+.hidden-git-icon {
+  width: 45px;
+  font-size: 30px;
+  margin: auto;
+  display: none;
+}
+#toggle,
+#bell,
+#git {
+  display: none;
+}
+
+.hidden-nav {
+  display: none;
+}
+
+.contain {
+  display: flex;
+  width: 100%;
+}
+
+@media only screen and (max-width: 860px) {
+  header {
+    height: auto;
+    padding: 15px 0;
+  }
+  .hamburger {
+    width: 100%;
+  }
+  .icons,
+  .head,
+  .flex,
+  .contain,
+  .li,
+  .ul,
+  .search,
+  .header-image,
+  .plus,
+  .bell,
+  .git {
+    display: none;
+  }
+  label {
+    display: block;
+    cursor: pointer;
+    color: #d1d5da;
+  }
+  #bell,
+  #git {
+    display: block;
+  }
+  #toggle:checked + .hidden-nav {
+    display: block;
+  }
+  .tog {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hidden-git-icon {
+    display: block;
+  }
+
+  .hidden-bell {
+    display: block;
+  }
+  .hidden-form {
+    border-bottom: 0.1px solid gray;
+  }
+  .hidden-search {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border-radius: 7px;
+    border: 0.5px solid gray;
+    background: url(https://github.githubassets.com/images/search-key-slash.svg);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    padding-left: 9px;
+    color: white;
+  }
+
+  .hidden-container {
+    width: 95%;
+    margin: auto;
+  }
+
+  .hidden-li {
+    list-style: none;
+    border-bottom: 0.1px solid gray;
+    font-size: 14px;
+    font-weight: 500;
+    margin: auto;
+    padding: 7px 0;
+  }
+  .hidden-lis {
+    list-style: none;
+    border-bottom: 0.1px solid gray;
+    font-size: 14px;
+    font-weight: 500;
+    margin: auto;
+    padding: 7px 0;
+  }
+  .hidden-liss {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin: auto;
+    padding: 7px 0;
+  }
+  .li-img {
+    width: 15px;
+    height: 15px;
+    border-radius: 15em;
+  }
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+.search {
+  width: 240px;
+  height: 30px;
+  outline: none;
+  border-radius: 7px;
+  border: 0.5px solid gray;
+  background: transparent;
+  margin: 0 15px;
+  padding-left: 9px;
+}
+
+.ul {
+  display: flex;
+  margin-right: 10px;
+  margin: auto;
+  font-size: 14px;
+}
+
+li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  float: right;
+  margin: auto;
+  margin-right: 30px;
+}
+
+.header-img {
+  width: 15px;
+  border-radius: 15em;
+}
+
+.sub-nav {
+  display: flex;
+  border-bottom: solid 1px gray;
+  height: 60px;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.wid {
+  width: 25%;
+}
+
+.list-item {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  padding: 10px 1px 10px 1px;
+}
+
+.list-item1 {
+  font-weight: 800;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  border-bottom: solid orangered 2px;
+  padding: 10px 2px 10px 2px;
+}
+
+svg {
+  padding-right: 9px;
+  padding-top: 18px;
+}
+
+.numb {
+  background: silver;
+  border-radius: 10px;
+  padding: 4px 7px;
+  margin-top: 12px;
+  margin-left: 10px;
+  height: 15px;
+  font-size: 11px;
+  border: 1px solid transparent;
+}
+.container2 {
+  display: flex;
+}
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+  bottom: 50px;
+  position: relative;
+  width: 25%;
+  text-align: right;
+  height: 400px;
+}
+
+.image-container {
+  display: flex;
+}
+
+.smiley {
+  position: relative;
+  left: 80%;
+  z-index: 2;
+  background: white;
+  border: silver solid 0.1px;
+  top: 70%;
+  padding: 8px 8px;
+  border-radius: 15em;
+}
+
+.image {
+  border-radius: 15em;
+  width: 85%;
+  z-index: 1;
+  position: relative;
+  margin: auto;
+}
+
+.profile {
+  width: 70%;
+  margin: auto;
+  text-align: left;
+}
+@media (max-width: 890px) {
+  .profile {
+    width: 75%;
+  }
+}
+
+@media (max-width: 80px) {
+  .profile {
+    width: 90%;
+  }
+}
+
+.name {
+  padding: 0%;
+  margin: 0%;
+}
+
+.user {
+  padding: 0%;
+  margin: 0%;
+}
+
+.div2 {
+  width: 72%;
+}
+
+.inp {
+  width: 95%;
+  margin: 0 auto auto auto;
+  border-bottom: 1px solid silver;
+  height: 45px;
+}
+
+.find {
+  width: 98%;
+  height: 30px;
+  border-radius: 5px;
+  border: gray solid 1px;
+  padding-left: 10px;
+}
+
+.result {
+  width: 95%;
+  margin: auto;
+}
+
+.publ {
+  width: 203px;
+  border-bottom: 1px solid silver;
+  height: 30px;
+  font-size: 14px;
+}
+
+.repo {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid silver 1px;
+}
+
+.rep {
+  display: flex;
+}
+
+.jav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0%;
+  margin: 0%;
+  width: 220px;
+}
+
+.p {
+  position: relative;
+  bottom: 15px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.but {
+  margin-top: 20px;
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+  outline: none;
+  border: 0.1px solid silver;
+}
+
+.h {
+  color: blue;
+}
+
+.hide {
+  display: none;
+}
+
+.hide-set {
+  display: none;
+}
+
+@media (max-width: 777px) {
+  .sub-nav {
+    position: relative;
+    left: -25px;
+  }
+  .hide {
+    display: block;
+    width: 95%;
+    margin: auto;
+    margin-top: 5px;
+  }
+  .hidden {
+    display: flex;
+  }
+  .hide-image-container {
+    width: 17%;
+  }
+  .hide-image {
+    width: 100%;
+    border-radius: 15em;
+  }
+  .hide-profile {
+    margin: auto auto auto 25px;
+  }
+  .hide-name {
+    font-size: 25px;
+    font-weight: 600;
+    margin: auto;
+  }
+  .hide-user {
+    font-size: 21px;
+    font-weight: lighter;
+  }
+  .hide-set {
+    display: block;
+    margin: auto;
+  }
+  .hide-status {
+    width: 100%;
+    border: solid silver 0.5px;
+    margin-top: 20px;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: 12px;
+    display: flex;
+  }
+  .hide-smiley {
+    margin-left: 10px;
+  }
+  .hide-stat {
+    margin: 0 6px;
+  }
+  .sub-nav {
+    overflow-x: scroll;
+  }
+  .div1 {
+    display: none;
+  }
+  .wid {
+    display: none;
+  }
+  .find {
+    width: 100%;
+  }
+  .div2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  svg {
+    display: none;
+  }
+}
